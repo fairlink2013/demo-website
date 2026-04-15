@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>メディカルサポート株式会社 | 診療所運営支援</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -154,12 +157,32 @@
     </div>
   </section>
 
-  <!-- お問い合わせCTA -->
-  <section id="contact" class="section cta">
+  <!-- お問い合わせ -->
+  <section id="contact" class="section contact-section">
     <div class="container">
-      <h2 class="cta-title">まずはお気軽にご相談ください</h2>
-      <p class="cta-desc">診療所の運営・採用に関するお悩みを、私たちが一緒に解決いたします。</p>
-      <a href="mailto:info@example.com" class="cta-btn">お問い合わせ</a>
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">お問い合わせ</h2>
+      <p class="section-lead">診療所の運営・採用に関するお悩みを、お気軽にご相談ください。</p>
+      <div class="contact-form-wrap">
+        <form class="contact-form" onsubmit="event.preventDefault(); document.querySelector('.form-thanks').style.display='block'; this.style.display='none';">
+          <div class="form-group">
+            <label for="name">お名前 <span class="required">必須</span></label>
+            <input type="text" id="name" name="name" placeholder="例：山田 太郎" required>
+          </div>
+          <div class="form-group">
+            <label for="email">メールアドレス <span class="required">必須</span></label>
+            <input type="email" id="email" name="email" placeholder="例：info@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">お問い合わせ内容 <span class="required">必須</span></label>
+            <textarea id="message" name="message" rows="6" placeholder="お問い合わせ内容をご記入ください" required></textarea>
+          </div>
+          <button type="submit" class="form-submit">送信する</button>
+        </form>
+        <div class="form-thanks" style="display:none;">
+          <p>お問い合わせありがとうございます。<br>内容を確認の上、担当者よりご連絡いたします。</p>
+        </div>
+      </div>
     </div>
   </section>
 
