@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ヒーロータイトル 文字色プレビュー</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Helvetica Neue", "Noto Sans JP", sans-serif;
+      background: #f5f6f8;
+      padding: 32px 24px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.5rem;
+      color: #1a2744;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      text-align: center;
+      color: #6b7280;
+      font-size: 0.875rem;
+      margin-bottom: 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .hero-preview {
+      position: relative;
+      height: 240px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #1a2744 0%, #2a4a7f 50%, #1a2744 100%);
+      padding: 24px;
+      text-align: center;
+    }
+    .hero-preview .sub {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 12px;
+    }
+    .hero-preview .title {
+      font-family: "Noto Serif JP", serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    .label {
+      background: #fff;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .label-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #1a2744;
+    }
+    .label-color {
+      font-family: monospace;
+      font-size: 0.85rem;
+      color: #6b7280;
+      background: #f5f6f8;
+      padding: 4px 12px;
+      border-radius: 4px;
+    }
+    .current-badge {
+      font-size: 0.7rem;
+      background: #3b6cb5;
+      color: #fff;
+      padding: 2px 8px;
+      border-radius: 3px;
+      margin-left: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>ヒーロータイトル 文字色の比較プレビュー</h1>
+  <p class="subtitle">「診療所の未来を、ともにつくる。」の文字色候補です。お好みの番号をお知らせください。</p>
+
+  <div class="grid">
+
+    <!-- A: 現在（白） -->
+    <div class="card">
+      <div class="hero-preview">
+        <div>
+          <p class="sub">Clinic Management Support</p>
+          <p class="title" style="color: #ffffff;">診療所の未来を、<br>ともにつくる。</p>
+        </div>
+      </div>
+      <div class="label">
+        <span class="label-name">A. ホワイト<span class="current-badge">現在</span></span>
+        <span class="label-color">#ffffff</span>
+      </div>
+    </div>
+
+    <!-- B: ゴールド -->
+    <div class="card">
+      <div class="hero-preview">
+        <div>
+          <p class="sub">Clinic Management Support</p>
+          <p class="title" style="color: #f0d264;">診療所の未来を、<br>ともにつくる。</p>
+        </div>
+      </div>
+      <div class="label">
+        <span class="label-name">B. ゴールド</span>
+        <span class="label-color">#f0d264</span>
+      </div>
+    </div>
+
+    <!-- C: ライトブルー -->
+    <div class="card">
+      <div class="hero-preview">
+        <div>
+          <p class="sub">Clinic Management Support</p>
+          <p class="title" style="color: #a8d8ea;">診療所の未来を、<br>ともにつくる。</p>
+        </div>
+      </div>
+      <div class="label">
+        <span class="label-name">C. ライトブルー</span>
+        <span class="label-color">#a8d8ea</span>
+      </div>
+    </div>
+
+    <!-- D: シャンパンゴールド -->
+    <div class="card">
+      <div class="hero-preview">
+        <div>
+          <p class="sub">Clinic Management Support</p>
+          <p class="title" style="color: #e8d4b8;">診療所の未来を、<br>ともにつくる。</p>
+        </div>
+      </div>
+      <div class="label">
+        <span class="label-name">D. シャンパンゴールド</span>
+        <span class="label-color">#e8d4b8</span>
+      </div>
+    </div>
+
+    <!-- E: ミントグリーン -->
+    <div class="card">
+      <div class="hero-preview">
+        <div>
+          <p class="sub">Clinic Management Support</p>
+          <p class="title" style="color: #a8e6cf;">診療所の未来を、<br>ともにつくる。</p>
+        </div>
+      </div>
+      <div class="label">
+        <span class="label-name">E. ミントグリーン</span>
+        <span class="label-color">#a8e6cf</span>
+      </div>
+    </div>
+
+    <!-- F: コーラルピンク -->
+    <div class="card">
+      <div class="hero-preview">
+        <div>
+          <p class="sub">Clinic Management Support</p>
+          <p class="title" style="color: #ffb4a2;">診療所の未来を、<br>ともにつくる。</p>
+        </div>
+      </div>
+      <div class="label">
+        <span class="label-name">F. コーラルピンク</span>
+        <span class="label-color">#ffb4a2</span>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
